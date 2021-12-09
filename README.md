@@ -16,7 +16,7 @@ The input file contains RPN expressions in each line. Each line then will split 
 10 / ( 7 - 2 ) = 2 
  ```  
 **NOTE 1:** Spaces within each line will be ignored.\
-**NOTE 1:** The input file might contain comments beginning with a pound sign (#). Comment lines will be ignored.\
+**NOTE 2:** The input file might contain comments beginning with a pound sign (#). Comment lines will be ignored.\
 **NOTE 3:** If for any reason, a line could not be processed, an error string starting for the corresponding line 
  will be printed in the output. The error string starts with 'ERROR'.\
 
@@ -65,7 +65,7 @@ The project includes unit tests written via Python uniitest. The unit tests are 
 The project also has an integration test named 'test_rpn_runner.py'. The integration test runs three scenarios and 
 asserts the printed results.
 ```
-Command to run a unit test called test_binary_expression_tree: python3 -m unittest unittests/test_binary_expression_tree.py
+To run a unit test called test_binary_expression_tree: python3 -m unittest unittests/test_binary_expression_tree.py
 ```
 ```
 To run the integration test: python3 -m unittest test_rpn_runner.py
